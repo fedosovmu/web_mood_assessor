@@ -12,5 +12,6 @@ class Content {
     7: 'Восхитительное',
   };
 
-  static const urlToGooglePlayTesters = 'https://play.google.com/apps/testing/com.fedosov.mindtracker';
+  static const googlePlayJoinBetaTestUrl = 'https://play.google.com/apps/testing/com.fedosov.mindtracker';
+  static const testflightUrl = 'https://testflight.apple.com/join/d0PjSI17';
 }

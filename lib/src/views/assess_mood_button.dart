@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_mood_assessor/src/constants/custom_colors.dart';
+import 'package:web_mood_assessor/src/constants/custom_text_styles.dart';
 
 
 class AssessMoodButton extends StatelessWidget {
@@ -15,7 +16,10 @@ class AssessMoodButton extends StatelessWidget {
       height: 56,
       child: ElevatedButton(
         onPressed: onPressed,
-        child: Text('Скачать'),
+        child: Text(
+          'Скачать',
+          style: CustomTextStyles.basicH1Medium,
+        ),
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(CustomColors.moods[mood]),
             elevation: MaterialStateProperty.all(0),

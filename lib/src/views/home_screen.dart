@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_mood_assessor/src/constants/content.dart';
 import 'package:web_mood_assessor/src/constants/custom_colors.dart';
 import 'package:web_mood_assessor/src/views/assess_mood_button.dart';
 import 'dart:js' as js;
@@ -26,7 +27,7 @@ class HomeScreen extends StatelessWidget {
                 mood: 5,
                 onPressed: () {
                   print('Press');
-                  //js.context.callMethod('open', [Content.urlToGooglePlayTesters]);
+                  js.context.callMethod('open', [Content.googlePlayJoinBetaTestUrl]);
                 },
               )
             ],
