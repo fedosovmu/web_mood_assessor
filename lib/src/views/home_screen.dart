@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:js' as js;
-
-import 'package:web_mood_assessor/src/constants/content.dart';
-import 'package:web_mood_assessor/src/constants/custom_colors.dart';
+import 'package:web_mood_assessor/src/views/assess_mood_button.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -22,16 +20,11 @@ class HomeScreen extends StatelessWidget {
                 height: 100,
                 width: 100,
               ),
-              MaterialButton(
-                minWidth: double.infinity,
-                height: 56,
-                color: CustomColors.moods[4],
-                splashColor: Colors.transparent,
-                onPressed: () async {
-                  print('press');
-                  //js.context.callMethod('open', [Content.urlToGooglePlayTesters]);
+              AssessMoodButton(
+                mood: 3,
+                onPressed: () {
+                  print('Press');
                 },
-                child: Text('Скачать'),
               )
             ],
           ),
