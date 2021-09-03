@@ -11,4 +11,6 @@ class Content {
     6: 'Отличное',
     7: 'Восхитительное',
   };
+
+  static const urlToGooglePlayTesters = 'https://play.google.com/apps/testing/com.fedosov.mindtracker';
 }
