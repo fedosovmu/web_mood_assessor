@@ -9,6 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
+          padding: EdgeInsets.all(16),
           color: Colors.grey,
           height: 600,
           width: 360,
@@ -21,9 +22,10 @@ class HomeScreen extends StatelessWidget {
                 width: 100,
               ),
               AssessMoodButton(
-                mood: 3,
+                mood: 4,
                 onPressed: () {
                   print('Press');
+                  //js.context.callMethod('open', [Content.urlToGooglePlayTesters]);
                 },
               )
             ],
