@@ -21,15 +21,6 @@ class CustomColors {
     6: Color(0xFF02C1B6),
     7: green,
   };
-  static const hoverBackgroundColorsForMoods = {
-    1: Color(0xFF86609E),
-    2: Color(0xFFBF43A9),
-    3: Color(0xFFF26187),
-    4: Color(0xFFFF91B9),
-    5: Color(0xFF8CADF7),
-    6: Color(0xFF03D3CC),
-    7: Color(0xFF3ECF00),
-  };
   static const purpleDarkHard = Color(0xFF191327);
   static const purpleDarkMedium = Color(0xFF261E35);
   static const purpleDarkLight = Color(0xFF322A42);

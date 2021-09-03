@@ -10,8 +10,6 @@ class AssessMoodButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final backgroundColor = CustomColors.moods[mood];
-    //final foregroundColor
     return SizedBox(
       width: double.infinity,
       height: 56,
@@ -19,13 +17,13 @@ class AssessMoodButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text('Скачать'),
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(backgroundColor),
-          elevation: MaterialStateProperty.all(0),
-          shape: MaterialStateProperty.all(
-            RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(Radius.circular(16))
+            backgroundColor: MaterialStateProperty.all(CustomColors.moods[mood]),
+            elevation: MaterialStateProperty.all(0),
+            shape: MaterialStateProperty.all(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(16))
+              )
             )
-          )
         ),
       ),
     );
