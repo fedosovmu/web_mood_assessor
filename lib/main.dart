@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_mood_assessor/src/home_screen.dart';
+import 'package:web_mood_assessor/src/views/home_screen.dart';
 
 void main() {
   runApp(MyApp());
